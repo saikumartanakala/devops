@@ -1,0 +1,8 @@
+---
+- hosts: all
+  user: root
+  tasks:
+    - name: create test1 dir
+      file:
+        path: /root/test1
+        state: directory
