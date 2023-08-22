@@ -1,0 +1,19 @@
+---
+- name: Clone or Pull Code from GitHub
+  hosts: all
+  user: root
+
+  tasks:
+    - name: ensure git is present
+      yumhttps://github.com/saikumartanakala/project1.git:
+        name: git
+        state: present
+
+    - name: Clone or Pull the Git repository
+      git:
+        repo: https://github.com/saikumartanakala/project1.git
+        dest: /root/gitnew 
+        version: main
+        update: yes
+
+
