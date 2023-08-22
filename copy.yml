@@ -1,8 +1,0 @@
----
-- hosts: all
-  user: root
-  tasks:
-    - name: copy files
-      fetch:
-        src: /root/file1
-        dest: /root/file

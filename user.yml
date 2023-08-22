@@ -1,8 +1,0 @@
----
-- hosts: dev
-  user: root
-  tasks:
-    - name: user creation and attach to group
-      user:
-        name: usersai
-        groups: test

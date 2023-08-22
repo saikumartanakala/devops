@@ -1,9 +1,0 @@
----
-- hosts: all
-  user: root
-  tasks:
-    - name: install java
-      yum:
-        name: java
-        state: present
-
